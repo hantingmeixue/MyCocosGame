@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="333" height="12" tilewidth="64" tileheight="64" nextobjectid="243">
+ <tileset firstgid="1" name="my_ground" tilewidth="64" tileheight="64">
+  <image source="my_ground.png" width="2048" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="tile_objects" tilewidth="64" tileheight="64">
+  <image source="tile_objects.png" width="2048" height="512"/>
+ </tileset>
+ <layer name="ground" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztl8lPFEEUhwtEEGSVTRG9CtwAQfbNfUmQZf4DDtzwIktC5gC3CRkhAWXR/5WvQ0iKmmq7oToZAr8v+ZLpdL2qNzVvXlcbI4QQQgghhBBCCCGEEEIIIYQQQgghhBB3h12swEp8gFX4EKuxBh/hTtmyEyIbojo/wVM8w7+mtK59Y3zjxP0mj83Ygk+wFduwHTuwEzfLlp0Q2bCNRfyF+3iAhZgxSePE3SV6bvbjAA7iaxzCYXyDI/jHlNaIe70VkMMr7DHJZ9k1/BGwjhCX+M6L/0xpXe85cXnPmOj62DOfzp/ZU48N2IhNJrln1GIdPvbEJvW9URzDcZzASZwyF/1wGmdwFufwLb7D9/jB+J+r7vVxQA692GeSz7I/cR3n8TsumKs1mab/X+bgxoXsfdaxbm72f/E25502NsvvcNO54s4Bvrq299/XV4tOrH3ffv+K8rNr9391HLInadbIYp1yxD7HbnyBL01yz3iKz7DLE5vU9z7iJ/yMX/ArfsMVk9wP0/TMYkAOaea2a3ERl3DZXD3fHl4jh00nLmTvs45dtXLLOfuxYd37fcvyThtrv8duB85l//5H15grrqZvWvtxPdOtT7t27c8FZ1zInsStYddVRC5wnXLEngNIpKgH
+  </data>
+ </layer>
+ <layer name="bamboo" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt1IENgCAMAMEymm6g+w8jG6gJYmjvJuBL0wgAAAAAAAAAAAD4xtYi9vb3K4BVVbshR289F++t9mdPmAmzZLghb2TozdAwmpkwS7Vdy9CboWE0M2GWaruWoTdDw2hmcu8CvP4Kdg==
+  </data>
+ </layer>
+ <layer name="environment" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt11dOAzEQxvH1/U9ByxMcghoglFAuQOgl9APwvVhxInszdhRDxP8nzUN27c14xl5pmwYAAAAAAAAAAAAAUMuha5qe++0sAGAxPOl9+cw7809ZVT/WFB368i8tqe/LihXHXgAsdnQ+dhV7igvFpfG8nGncuRt9O0z7hujq3r7ioNJ59Gvxecac6Pqpol+Q05HmHM9xLbF6+rVY+xTWPFX/Tf3eUmy78b0QE6tX6rk+17b6W1n6FI6Zpa9WbeuqvddzWeuTOtOl9c15v0ya93nLcaM8bhV3ii/FtzGvD437dKNvh2nfEPe696B4rLRuvxafZ8yrrr8p3gtyetGcoXHeusZtZP5HrJ5+LdY+hTVP1f9KvweKaze+F2Ji9QqfG67T5zpZ/5JapPoUPiscYxlvlZrTtq9q7/Vc1n2fOtOl9U3tW0tfcs4bAAAAsIh+ALY6mWQ=
+  </data>
+ </layer>
+ <layer name="step" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt1LkJACAQAEHtyf5rMxDB9xIjYQa2hU0JAAAAAOBNyS0AYv2XngkQG3/pmQB36y89E+Ds9EvPBNjdfumZALPol54JAMCvKrt0B0A=
+  </data>
+ </layer>
+ <layer name="solid" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt11EKgzAMAFBzCL/cl+IBctpddwz30QmDrSiu+h4U/ayJaZOuAwAAatzi6B2wpYwlpymv8LNB3XBho/8fmvS8u/pYnqkHBOCCMt6XuW5b6zlhjuNnhyx6n7Oavvi2fOViHYehkTooa/ZerHGnvraMyaf3GnMDsf4XzmmgVu50NwAAAAAAcF4P40oIog==
+  </data>
+ </layer>
+ <layer name="coin" width="333" height="12">
+  <data encoding="base64" compression="zlib">
+   eJzt2rEJgEAQBMC3Eluw/+oMRDBQQXjPVWfAxOT272ExsDUAAIA847A8e6aD9wB/dNSVwLPOvmW+MA/4tur+qrSdd/fs5G5OzpYmfVdp+ZKyVFjP2+vcafdZpbKbr0rOluZNu0rI17s//sbeAIDe/IMAAAAA0NoMYYsEow==
+  </data>
+ </layer>
+ <objectgroup name="ground">
+  <object id="29" x="0" y="640">
+   <polyline points="0,0 2112,0 2112,-64 2688,-64 2688,-192 3328,-192 3328,0 4224,0 4352,-64 4864,-64 4992,0 5248,0 5248,128"/>
+  </object>
+  <object id="30" x="5376" y="768">
+   <polyline points="0,0 0,-128 768,-128 768,0"/>
+  </object>
+  <object id="31" x="6272" y="768">
+   <polyline points="0,0 0,-128 2368,-128 2368,0"/>
+  </object>
+  <object id="32" x="8768" y="768">
+   <polyline points="0,0 0,-128 320,-128 320,0"/>
+  </object>
+  <object id="33" x="9216" y="768">
+   <polyline points="0,0 0,-128 3008,-128 3008,0"/>
+  </object>
+  <object id="34" x="12352" y="768">
+   <polyline points="0,0 0,-128 1088,-128 1088,0"/>
+  </object>
+  <object id="35" x="13568" y="768">
+   <polyline points="0,0 0,-128 704,-128 704,-192 1024,-192 1024,-320 1408,-320 1408,-128 1600,-128 1600,-320 2048,-320 2048,-192 2432,-192 2432,0"/>
+  </object>
+  <object id="36" x="16128" y="768">
+   <polyline points="0,0 0,-128 512,-128 512,0"/>
+  </object>
+  <object id="37" x="16768" y="768">
+   <polyline points="0,0 0,-128 1472,-128 1472,0"/>
+  </object>
+  <object id="38" x="18432" y="768">
+   <polyline points="0,0 0,-128 2880,-128"/>
+  </object>
+  <object id="39" x="21312" y="0">
+   <polyline points="0,0 0,768"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="bamboo">
+  <object id="40" x="5248" y="768">
+   <polyline points="0,0 0,-256 128,-256 128,0"/>
+  </object>
+  <object id="41" x="9088" y="768">
+   <polyline points="0,0 0,-320 128,-320 128,0"/>
+  </object>
+  <object id="42" x="12224" y="768">
+   <polyline points="0,0 0,-256 128,-256 128,0"/>
+  </object>
+  <object id="43" x="16640" y="768">
+   <polyline points="0,0 0,-256 128,-256 128,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="coin">
+  <object id="44" x="832" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="45" x="896" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="46" x="960" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="47" x="2048" y="448" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="48" x="2112" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="49" x="2176" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="50" x="2624" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="51" x="2688" y="256" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="52" x="2752" y="256" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="53" x="4416" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="55" x="4480" y="256" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="56" x="4544" y="256" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="57" x="4608" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="58" x="6080" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="59" x="6144" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="60" x="6208" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="61" x="6272" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="62" x="8576" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="63" x="8640" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="64" x="8704" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="65" x="8768" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="66" x="9216" y="192" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="67" x="9280" y="128" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="68" x="9344" y="128" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="69" x="13376" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="70" x="13440" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="71" x="13504" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="72" x="13568" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="73" x="16000" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="74" x="16064" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="75" x="16128" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="76" x="18240" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="77" x="18304" y="320" width="64" height="64">
+   <ellipse/>
+  </object>
+  <object id="78" x="18368" y="384" width="64" height="64">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="big_coin">
+  <object id="144" x="15059" y="564" width="23" height="23">
+   <ellipse/>
+  </object>
+  <object id="236" x="9792" y="128">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="general_tile">
+  <object id="79" x="3072" y="192" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="80" x="3648" y="128" width="64" height="64">
+   <properties>
+    <property name="coin" value="10"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="81" x="3584" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="82" x="3648" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="83" x="3712" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="87" x="7808" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="88" x="7936" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="89" x="8192" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="90" x="8256" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="91" x="9344" y="256" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="92" x="9408" y="256" width="64" height="64">
+   <properties>
+    <property name="type" value="2"/>
+   </properties>
+  </object>
+  <object id="93" x="9472" y="256" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="95" x="9536" y="256" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="96" x="9600" y="256" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="97" x="10880" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="98" x="10944" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="99" x="11008" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="100" x="11072" y="128" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="101" x="11136" y="128" width="64" height="64">
+   <properties>
+    <property name="coin" value="10"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="102" x="11200" y="128" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="103" x="11328" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="104" x="11392" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="105" x="12672" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="106" x="12864" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="107" x="13056" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="108" x="14976" y="448" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="109" x="15040" y="448" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="110" x="15104" y="448" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="111" x="16896" y="320" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="112" x="16960" y="320" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="113" x="17024" y="320" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="114" x="17088" y="320" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="115" x="17152" y="320" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="116" x="18880" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="118" x="18944" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object id="119" x="19008" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="special_tile">
+  <object id="120" x="1216" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="121" x="1472" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="2"/>
+   </properties>
+  </object>
+  <object id="122" x="1536" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="123" x="7232" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="10"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="124" x="7872" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="125" x="11264" y="384" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object id="126" x="14080" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="2"/>
+   </properties>
+  </object>
+  <object id="127" x="15360" y="192" width="64" height="64">
+   <properties>
+    <property name="coin" value="1"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="transparent_tile">
+  <object id="128" x="11072" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="3"/>
+   </properties>
+  </object>
+  <object id="129" x="11136" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="3"/>
+   </properties>
+  </object>
+  <object id="130" x="11200" y="384" width="64" height="64">
+   <properties>
+    <property name="type" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="step_tile">
+  <object id="131" x="19264" y="576" width="448" height="64"/>
+  <object id="132" x="19328" y="512" width="384" height="64"/>
+  <object id="134" x="19392" y="448" width="320" height="64"/>
+  <object id="135" x="19456" y="384" width="256" height="64"/>
+  <object id="136" x="19520" y="320" width="192" height="64"/>
+  <object id="137" x="19584" y="256" width="128" height="64"/>
+  <object id="138" x="19648" y="192" width="64" height="64"/>
+  <object id="183" x="19712" y="192" width="64" height="448"/>
+ </objectgroup>
+ <objectgroup name="friction_edge">
+  <object id="172" x="19264" y="576">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="173" x="19328" y="512">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="174" x="19392" y="448">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="175" x="19456" y="384">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="176" x="19520" y="320">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="177" x="19584" y="256">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object id="178" x="19648" y="192">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="179" x="5248" y="512">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="180" x="9088" y="448">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="181" x="12224" y="512">
+   <polyline points="0,0 128,0"/>
+  </object>
+  <object id="182" x="16640" y="512">
+   <polyline points="0,0 128,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="monster_robbit">
+  <object id="200" x="5184" y="640"/>
+  <object id="202" x="5952" y="640"/>
+  <object id="206" x="13312" y="640"/>
+  <object id="208" x="15232" y="448"/>
+  <object id="209" x="15552" y="448"/>
+  <object id="210" x="16576" y="640"/>
+  <object id="211" x="18112" y="640"/>
+  <object id="232" x="7744" y="640"/>
+  <object id="234" x="11392" y="640"/>
+  <object id="240" x="1664" y="640"/>
+ </objectgroup>
+ <objectgroup name="monster_tortoise">
+  <object id="227" x="10752" y="640"/>
+  <object id="229" x="17984" y="640"/>
+  <object id="230" x="19008" y="384"/>
+  <object id="231" x="11328" y="384"/>
+ </objectgroup>
+ <objectgroup name="flag_pot">
+  <object id="238" x="20293.3" y="576.333" width="118" height="62"/>
+ </objectgroup>
+ <objectgroup name="flagpole">
+  <object id="239" x="20343" y="14.6667" width="18" height="560"/>
+ </objectgroup>
+ <objectgroup name="limit_line">
+  <object id="241" x="0" y="0">
+   <polyline points="0,0 0,768"/>
+  </object>
+  <object id="242" x="21312" y="0">
+   <polyline points="0,0 0,768"/>
+  </object>
+ </objectgroup>
+</map>
